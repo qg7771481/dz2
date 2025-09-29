@@ -19,6 +19,8 @@ class TorontoTokyo(models.Model):
     prize = models.IntegerField(max_length=30)
     city_Tokyo = models.CharField(max_length=5)
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
+    owner = models.ForeignKey(User, on_delete=models.CASCADE)
+
 
 
 
